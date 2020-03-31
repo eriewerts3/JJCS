@@ -133,19 +133,152 @@ img {
     background-image: url(images/heroroad.jpg);
     height: 250px;
     background-size: auto;
-    /* Changed the background size from the book (100%->auto) so it fills the div container with out needing to repeat */
+    /* Changed the background size from the book (100%->auto) so it fills the div container with out needing to repeat. Chapter 6*/
 }
 
 #heromugs {
     background-image: url(images/heromugs.jpg);
     height: 250px;
     background-size: auto;
-    /* Changed the background size from the book (100%->auto) so it fills the div container with out needing to repeat */
+    /* Changed the background size from the book (100%->auto) so it fills the div container with out needing to repeat. Chapter 6*/
 }
 
 #heroguitar {
     background-image: url(images/heroguitar.jpg);
     height: 250px;
     background-size: auto;
-    /* Changed the background size from the book (100%->auto) so it fills the div container with out needing to repeat */
+    /* Changed the background size from the book (100%->auto) so it fills the div container with out needing to repeat. Chapter 6*/
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        background-image: none;
+    }
+
+    #wrapper {
+        width: auto;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    header {
+        border-bottom: 5px solid #fef6c2;
+    }
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 2.5em;
+    }
+    
+    nav {
+        float: none;
+        width: auto;
+        padding-top: 0;
+        margin: 10px;
+        font-size: 1.3em;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        padding: 1em;
+        width: 8em;
+        font-weight: bold;
+        border-style: none;
+    }
+
+    #heroroad,
+    #heromugs,
+    #heroguitar {
+        margin: 0em;
+        padding: 0em;
+    }
+
+    main {
+        margin: 0;
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        background-image: url(javajammini.jpg);
+        height: 128px;
+    }
+
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.2em;
+        width: auto;
+        border-bottom: 1px solid #fef6c2;
+    }
+
+    nav li{
+        display: block;
+    }
+
+    main {
+        padding-top: 1px;
+    }
+
+    h2 {
+        padding: .5em 0 0 .5em;
+        margin-right: .5em;
+    }
+
+    .details {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #heroroad,
+    #heromugs,
+    #heroguitar {
+        background-image: none;
+        height: auto;
+    }
+
+    .floatleft {
+        padding-right: .5em;
+        padding-left: .5em;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
 }
