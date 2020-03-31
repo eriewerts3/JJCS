@@ -95,9 +95,9 @@ footer {
 }
 
 main {
+    padding: 0 2em 2em 2em;
     padding-left: 0em;
     padding-right: 0em;
-    padding-bottom: 0em;
     margin-left: 200px;
     display: block;
     background-color: #fef6c2;
@@ -114,13 +114,31 @@ main dl{
     padding-right: 2em;
 }
 
+img {
+    padding: 0 10px;
+}
+
+/* Table */
+table {
+    margin: 0 auto;
+    width: 90%;
+    border-spacing: 0;
+    background-color: #D2B48E;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #fcebb6;
+}
+
+/* Classes */
 .details {
     padding: 0 20%;
     overflow: auto;
-}
-
-img {
-    padding: 0 10px;
 }
 
 .floatleft {
@@ -223,7 +241,7 @@ img {
 
 @media only screen and (max-width: 768px) {
     header {
-        background-image: url(javajammini.jpg);
+        background-image: url(images/javajammini.jpg);
         height: 128px;
     }
 
