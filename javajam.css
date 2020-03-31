@@ -3,6 +3,10 @@
     Last modified:1/39/2020
     Supporting Files: 
 */
+*{
+    box-sizing: border-box;
+}
+
 body {
     background: #fcebb6;
     color: #221811;
@@ -11,11 +15,17 @@ body {
 }
 
 header {
-    background-color: #D2B48C;
     height: 150px;
     background: url(images/javajamlogo.jpg);
     background-repeat: no-repeat;
-    
+    background-color: #D2B48c;
+}
+
+header,
+nav,
+main,
+footer {
+    display: block;
 }
 
 h1 {
@@ -26,12 +36,18 @@ h1 {
 
 h4 {
     background: #D2B48C;
+    text-transform: uppercase;
     font-size: 1.2em;
     padding-left: .5em;
     padding-bottom: .25em;
+    border-bottom: 1px solid #231814;
+    padding-bottom: 0em;
+    clear: left;
 }
 
 nav {
+    float: left;
+    width: 200px;
     font-weight: bold;
     text-align: center;
     font-size: 1.5em;
@@ -40,6 +56,23 @@ nav {
 
 nav a {
     text-decoration: none;
+}
+
+nav a:link {
+    color: #fef6c2;
+}
+
+nav a:visited {
+    color: #D2B48c;
+}
+
+nav a:hover {
+    color: #cc9933;
+}
+
+nav ul {
+    padding-left: 0px;
+    list-style: none;
 }
 
 footer {
@@ -55,24 +88,64 @@ footer {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fef6c2;
+    background-color: #231814;
     min-width: 900px;
     max-width: 1280px;
     box-shadow: 2px 2px 5px 5px #221811;
 }
 
 main {
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-bottom: 0em;
+    margin-left: 200px;
     display: block;
+    background-color: #fef6c2;
+}
 
+main h2,
+main h3,
+main h4,
+main p,
+main div,
+main ul,
+main dl{
+    padding-left: 3em;
+    padding-right: 2em;
 }
 
 .details {
     padding: 0 20%;
+    overflow: auto;
 }
 
 img {
     padding: 0 10px;
+}
+
+.floatleft {
+    float: left;
+    padding-bottom: 2em;
+    padding-right: 2em;
+}
+
+#heroroad {
+    background-image: url(images/heroroad.jpg);
+    height: 250px;
+    background-size: auto;
+    /* Changed the background size from the book (100%->auto) so it fills the div container with out needing to repeat */
+}
+
+#heromugs {
+    background-image: url(images/heromugs.jpg);
+    height: 250px;
+    background-size: auto;
+    /* Changed the background size from the book (100%->auto) so it fills the div container with out needing to repeat */
+}
+
+#heroguitar {
+    background-image: url(images/heroguitar.jpg);
+    height: 250px;
+    background-size: auto;
+    /* Changed the background size from the book (100%->auto) so it fills the div container with out needing to repeat */
 }
