@@ -1,7 +1,7 @@
 /* Edward Riewerts III
     Filename: javajam.css
-    Last modified:1/39/2020
-    Supporting Files: 
+    Last modified:3/30/2020
+    Supporting Files: images
 */
 *{
     box-sizing: border-box;
@@ -135,6 +135,33 @@ tr:nth-child(even) {
     background-color: #fcebb6;
 }
 
+/* Form formating */
+form {
+    padding: 2em;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 8em;
+    padding-right: 1em;
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+
+/* Audio Styles */
+audio {
+    display: block;
+    margin-top: 1em;
+}
+
+
+
 /* Classes */
 .details {
     padding: 0 20%;
@@ -145,6 +172,17 @@ tr:nth-child(even) {
     float: left;
     padding-bottom: 2em;
     padding-right: 2em;
+}
+
+/* Id selectors */
+#mysubmit {
+    margin-left: 9.5em;
+}
+
+#herojobs {
+    height: 250px;
+    background-image: url(images/herojobs.jpg);
+    background-size: 100% 100%;
 }
 
 #heroroad {
@@ -226,17 +264,18 @@ tr:nth-child(even) {
         border-style: none;
     }
 
+    main {
+        margin: 0;
+        font-size: 90%;
+    }
+
     #heroroad,
     #heromugs,
     #heroguitar {
         margin: 0em;
         padding: 0em;
     }
-
-    main {
-        margin: 0;
-        font-size: 90%;
-    }
+       
 }
 
 @media only screen and (max-width: 768px) {
@@ -287,6 +326,10 @@ tr:nth-child(even) {
         height: auto;
     }
 
+    #herojob {
+        display: none;
+    }
+    
     .floatleft {
         padding-right: .5em;
         padding-left: .5em;
