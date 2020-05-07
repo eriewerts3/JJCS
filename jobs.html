@@ -1,0 +1,55 @@
+<!--Edward Riewerts III
+    Filename: jobs.html
+    Last modified:4/1/2020
+    Supporting Files: javajam.css, images
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>JavaJam Coffee House Jobs</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta discription = "JavaJam Coffee House offers a delightful selection of coffee">
+        <meta keywords = "JavaJam, Coffee, beverages, drinks">
+        <link rel="stylesheet" href="javajam.css"/>
+    </head>
+
+    
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>JavaJam Coffee House</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div id="herojobs"></div>
+                <h2>Jobs at JavaJam</h2>
+                <p>Want to work at JavaJam? Fill out the form below to start your application.</p><br>
+                <p>Required fields are marked with an asterisk(&#42;).</p>
+                <form action="https://webdevbasics.net/scripts/javajam8.php"  method ="post" >
+                    <label for ="myName"> *Name: </label>
+                    <input type="text" name="myName" required ="yes"/>
+                    <label for ="myEmail"> *E-mail: </label>
+                    <input type="email" name="myEmail" required ="yes" />
+                    <label for ="myExperience">*Experience:</label>
+                    <textarea rows="2" cols="20" name="myExperience" required ="yes"></textarea>
+                    <input type="submit" value="Apply Now" id="mySubmit">
+                </form>
+            </main>
+            <footer>
+                    Copyright &copy; 2016 JavaJam Coffee House<br>
+                    <a href="mailto:edwardriewerts@riewerts.com">edwardriewerts@riewerts.com</a>
+            </footer>
+        </div>
+    </body>
+</html>
