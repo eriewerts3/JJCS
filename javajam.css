@@ -163,6 +163,14 @@ audio {
 
 
 /* Classes */
+.item {
+    background-color: #faf9f7;
+    margin: 2em 3em;
+    width: 80%;
+    padding: 1em;
+    overflow: auto;
+}
+
 .details {
     padding: 0 20%;
     overflow: auto;
@@ -175,6 +183,11 @@ audio {
 }
 
 /* Id selectors */
+#herocouch {
+    height: 250px;
+    background-image: url(herocouch.jpg);
+    background-size: 100% 100%;
+}
 #mysubmit {
     margin-left: 9.5em;
 }
